@@ -1,0 +1,1077 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 1;
+    padding: 14px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.h1, h2, h3, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+strong {
+    font-family: 'Raleway', sans-serif;
+}
+
+/******** Navigation **********/
+
+.head{
+    display: block;
+    color:#0065FC;
+}
+.inscription{
+    display: none;
+    color:#0065FC ;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: end;
+    height: 70px;
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+
+.list-items {
+    justify-self: end;
+}
+
+.item {
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 120px;
+    height: 70px;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+    color: #cecece;
+    font-family: 'Raleway', sans-serif;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item.active {
+    border-top: 1px solid;
+    color: #0065FC;
+}
+
+.item.register {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+/********* recherche **********/
+
+.search-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: a;
+    margin-bottom: 30px;
+}
+
+.reve {
+    margin-bottom: 35px;
+}
+
+.ville {
+    margin-bottom: 35px;
+}
+
+.input-search-container {
+    width: 380px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 50px 1fr 100px;
+    justify-items: stretch;
+    margin-bottom: 35px;
+}
+
+.icon {
+    height: 48px;
+    background-color: #cecece;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+}
+
+.button-search {
+    height: 48px;
+    width: 120px;
+    box-sizing: border-box;
+    background-color: blue;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px transparent;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.desktop {
+    display: inline-block;
+}
+
+.mobile {
+    display: none;
+}
+
+.input-search-container>.button-search>.fas-fa-search {
+    visibility: hidden;
+    display: none;
+}
+
+input {
+    height: 44px;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-style: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover, icon::hover, button::hover {
+    cursor: pointer;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+P {
+    color: #cecece;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+/******** filter *******/
+
+.filters {
+    box-sizing: border-box;
+    width: 60%;
+    height: 80px;
+    margin-bottom: 14px;
+}
+
+.button-container {
+    margin-top: 4px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 45px 150px 120px 150px 150px;
+    grid-column-gap: 20px;
+    margin-bottom: 35px;
+}
+.ftitre{
+    margin-top: 12px;
+}
+
+.button1 {
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    width: 150px;
+    border-radius: 30px;
+    border: 2px solid #cecece;
+    background-color: white;
+}
+
+.button2 {
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    width: 120px;
+    border-radius: 30px;
+    border: 2px solid #cecece;
+    background-color: white;
+}
+
+.button3 {
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    width: 150px;
+    border-radius: 30px;
+    border: 2px solid #cecece;
+    background-color: white;
+}
+
+.button4 {
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px solid #cecece;
+    background-color: white;
+    
+}
+
+button>.img {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: #DEEBFF;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: #0065FC;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+}
+
+img>i {
+    line-height: 34px;
+}
+
+button>.text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 45px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.button div:hover {
+    border: 2px solid #0065fc;
+    background-color: #DEEBFF;
+    transition: 0.2s;
+}
+
+.button div:hover .descriptionfiltre {
+    color: #0065FC;
+    transition: 0.2s;
+}
+
+.button div:hover .icon {
+    background-color: #0065FC;
+    color: white;
+    transition: 0.2s;
+}
+
+.phraseInfo {
+    font-weight: 600;
+    font-size: 0.90em;
+}
+
+.cercle {
+    color: #0065FC;
+    font-size: 0.70em;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 100%;
+    height: 1.3em;
+    width: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    padding: 1px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 1.2em;
+    margin-bottom: 35px;
+}
+
+/********* hébergement  **********/
+
+.hebergement {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-column-gap: 24px;
+    padding-top: 20px;
+}
+
+.heberge {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 440px;
+    height: 170px;
+}
+
+.heberge:active {
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.marseille {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 24px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 40px 24px;
+    height: 800px;
+}
+
+.row {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.populaire {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 50px 230px 220px;
+    grid-row-gap: 24px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 10px 24px;
+    -ms-grid-row-align: start;
+    height: 800px;
+}
+
+.article {
+    box-sizing: border-box;
+    width: auto;
+    height: 300px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.stars {
+    margin-top: 14px;
+}
+
+.stars {
+    color: blue;
+}
+
+/*********  populaire **********/
+
+.graph {
+    font-size: 30px;
+    margin-left: 60px;
+    text-align: right;
+}
+
+.popular {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 150px;
+    height: 160px;
+}
+
+.articlepop {
+    box-sizing: border-box;
+    width: auto;
+    height: 170px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.infopop {
+    all: unset;
+    font: inherit;
+    font-size: inherit;
+    padding-left: 20px;
+    height: auto;
+}
+
+.pluspop {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 20px;
+}
+
+.starpopu {
+    all: unset;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8em;
+    padding: 50px 0 2px 0;
+    margin-top: 14px;
+    color: blue;
+}
+
+.starpopumillieu {
+    box-sizing: border-box;
+    
+    all: unset;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8em;
+    padding: 33px 0 2px 0;
+}
+
+/*Activités à Marseille*/
+
+.activites {
+    height: 700px;
+    width: auto;
+    margin: 45px 3.8% 0 1%;
+    padding: 0;
+}
+
+.activites h2 {
+    font-size: 1.3em;
+    margin: 70px 0 30px 0;
+}
+
+.blocactivites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.premierblock, .deuxiemeblock {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.grandecarte {
+    height: 442px;
+    width: 46%;
+}
+
+.doublecarte {
+    height: 444px;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.doublecartepartie1 {
+    height: 237px;
+}
+
+.doublecartepartie2 {
+    height: 165px;
+}
+
+.grandecarte, .doublecartepartie1, .doublecartepartie2, .doublecarte2partie1, .doublecarte2partie2 {
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
+    transition: transform .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.grandecarte:active, .doublecartepartie1:active, .doublecartepartie2:active, .doublecarte2partie1:active, .doublecarte2partie2:active {
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.activites article img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.grandecarte img {
+    height: 87%;
+}
+
+.doublecartepartie1 img {
+    height: 183px;
+    object-fit: cover;
+}
+
+.doublecartepartie2 img {
+    height: 104px;
+    object-fit: cover;
+}
+
+.activites article h3 {
+    font-size: 1em;
+    margin-left: 17px;
+}
+
+.doublecarte2partie1 {
+    height: 194px;
+}
+
+.doublecarte2partie2 {
+    height: 206px;
+}
+
+.doublecarte2partie1 img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.doublecarte2partie2 img {
+    height: 145px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.doublecarte2partie1 h3, .doublecarte2partie2 h3 {
+    margin-top: 14px;
+}
+
+/*********  footer **********/
+
+footer {
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    font-weight: 600;
+    color: #0065FC;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #F2F2F2;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 3.8% 0 3.8%;
+}
+
+footer section {
+    padding: 1em 1em;
+    width: 30%;
+}
+
+footer section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+footer section p {
+    margin-top: 20px;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+footer section p:hover {
+    border-bottom: 1px solid blue;
+}
+
+footer a:hover {
+    font-weight: 600;
+    color: #0065FC;
+}
+
+@media (min-width: 872px) and (max-width: 1160px) {
+    
+    .mobile {
+        display:none;
+    }
+    .inscription{
+        display: none;
+        
+    }
+    .list-items{
+        margin-bottom: 50px;
+    }
+    .info{
+        margin-top: 50px;
+    }
+    .hebergement {
+        flex-direction: column-reverse;
+        margin: 0;
+        display: inline-block;
+    }
+    .article{
+        width: 500px;
+    }a
+    main {
+        height: auto;
+        display: inline-block;
+    }
+    .input-search-container{
+        width: 300px;
+    }
+    .heberge {
+        width: 500px;
+    }
+    .marseille > h1{
+        margin-bottom: 20px;
+        
+    }
+    .activites {
+        height: 1060px;
+        display: inline-block;
+    }
+    .hebergement .populaire {
+        width: 100%;
+        height: 250px;
+    }
+    .hebergement .populaire div {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px 0px 40px;
+    }
+    .hebergement .populaire {
+        all: unset;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 40px 40px 0 40px;
+    }
+    .hebergement .populaire div article {
+        width: 29.65%;
+        padding: 4px;
+        height: 150px;
+    }
+    .hebergement .populaire div article img {
+        height: 150px;
+    }
+    .hebergement .populaire div article div {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    .hebergement section {
+        width: auto;
+    }
+    .blocactivites {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 930px;
+    }
+    .premierblock, .deuxiemeblock {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .filters div:nth-child(5) {
+        margin-left: 77px;
+    }
+}
+@media (min-width: 810px) and (max-width: 1160px) {
+    .inscription{
+        display: hidden;
+        overflow: visible;
+    }
+    .item {
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 120px;
+        height: 70px;
+        display: inline-block;
+        margin-left: 30px;
+        text-align: center;
+        color: #cecece;
+        font-family: 'Raleway', sans-serif;
+    }
+    .heberge {
+        width: 100%;
+    }
+    .hebergement {
+        display: block;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .article {
+        margin-bottom: 20px;
+    }
+    .marseille, .row {
+        display: block;
+        height: auto;
+    }
+    .marseille {
+        margin-bottom: 10px;
+    }
+    main {
+        height: auto;
+    }
+    .activites {
+        height: 1060px;
+    }
+    .hebergement .populaire {
+        width: 100%;
+    }
+    .hebergement section {
+        width: auto;
+    }
+    .blocactivites {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 930px;
+    }
+    .premierblock, .deuxiemeblock {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .blocartes article img {
+        object-fit: fill;
+    }
+    input {
+        width: 75%;
+    }
+    .filters div:nth-child(4) {
+        margin-left: 77px;
+    }
+}
+
+@media all and (max-width: 809px) {
+    .inscription{
+       position: absolute;
+        color: #0065FC;
+       font-weight: bolder;
+       right: 12px;
+       top: 20px;
+       display: hidden; 
+    }
+    .filters {
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .navigation {
+        display: block;
+        width:50px ;
+    }
+    .item.active {
+        border-bottom: 3px solid;
+        color: #0065FC;
+        border-top: 0px;
+        
+    }
+    .head{
+        color: #0065FC;
+    }
+    .item {
+        border-bottom: 3px solid rgb(204, 203, 203);
+        color: black;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .list-items {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .item.register {
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+    .reve {
+        margin-top: 20px;
+    }
+    input {
+        margin-top: 200px;
+    }
+    .button-search {
+        width: 60px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .input-search-container {
+        margin-top: 50px;
+        max-width: 100%;
+        ;
+    }
+    
+    input {
+        margin-top: 0px;
+    }
+    .ftitre{
+        margin-bottom: 20px;
+    }
+    .filters {
+        margin-top: 0px;
+    }
+    .button-container {
+        display: block;
+        margin-top: 0px;
+    }
+    .button1, .button2, .button3, .button4 {
+        margin-bottom: 20px;
+    }
+  
+    .filters div:nth-child(5) {
+        margin-left: 77px;
+    }
+    button>.text {
+        display: block;
+    }
+    .heberge {
+        width: 100%;
+    }
+    .hebergement {
+        display: block;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .article {
+        margin-bottom: 20px;
+    }
+    .marseille, .row {
+        display: block;
+        height: auto;
+    }
+    .marseille {
+        margin-bottom: 10px;
+    }
+    main {
+        height: auto;
+    }
+    .starpopu{
+        
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .activites {
+        height: 1060px;
+    }
+    .hebergement .populaire {
+        width: 100%;
+    }
+    .hebergement section {
+        width: auto;
+    }
+    .blocactivites {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 930px;
+    }
+    .premierblock, .deuxiemeblock {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .blocartes article img {
+        object-fit: fill;
+    }
+    input {
+        width: 75%;
+    }
+    .filters div:nth-child(4) {
+        margin-left: 77px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .hebergement section {
+        padding: 30px;
+    }
+
+    .hebergement section .blocartes div {
+        flex-direction: column;
+        margin: 0;
+        height: 650px;
+        width: 100%;
+        display: flex;
+    }
+    .hebergement section .blocartes {
+        height: 1330px;
+        width: 100%;
+    }
+    .hebergement section .blocartes div article {
+        width: auto;
+    }
+    .search-container {
+        height: auto;
+    }
+    .filters {
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .filters .button-container {
+        margin: 0;
+        font-size: 0.9em;
+    }
+    .filters .button-container {
+        margin-left: 11px;
+    }
+    .heberge{
+        width: 100%;
+    }
+    .activites {
+        height: 1360px;
+        margin: 45px 30px 0 30px;
+    }
+    .blocactivites {
+        height: 1275px;
+        flex-direction: column;
+    }
+    .premierblock, .deuxiemeblock {
+        height: 622px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .grandecarte {
+        height: 190px;
+    }
+    .grandecarte img, .doublecartepartie1 img, .doublecartepartie2 img, .doublecarte2partie1 img, .doublecarte2partie2 img {
+        height: 74%;
+    }
+    .doublecarte {
+        height: 405px;
+        justify-content: space-between;
+    }
+    .doublecarte div {
+        height: 190px;
+    }
+    .blocactivites div article {
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer section {
+        width: 80%;
+    }
+    .filtres div:nth-child(4) {
+        margin-left: 0px;
+    }
+    button div {
+        display: none;
+    }
+    .fa-search {
+        display: inline;
+    }
+    .map {
+        height: 50px;
+    }
+    button {
+        width: 55px;
+        border: none;
+        height: 50px;
+        border-radius: 16px 16px 16px 16px;
+    }
+    input {
+        height: 50px;
+        border: none;
+    }
+    header {
+        display: block;
+    }
+    .navigation {
+        display: block;
+        justify-content: space-between;
+        position: unset;
+        margin-top: 25px;
+    }
+    .navigation {
+        padding: 0 0 20px 0;
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        text-align: center;
+    }
+    header nav a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: unset;
+        padding-top: 0;
+    }
+    .navigation {
+        all: unset;
+        top: 19px;
+        right: 0px;
+        width: unset;
+        color: #0065FC;
+        font-weight: bold;
+    }
+    .navigation:hover {
+        all: unset;
+        border-top: none;
+        color: #0065FC;
+        font-weight: bold;
+        top: 19px;
+        right: 0px;
+        width: unset;
+    }
+    .search-container h1 {
+        margin-top: 1.8em;
+    }
+}
