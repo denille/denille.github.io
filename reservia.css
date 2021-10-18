@@ -20,7 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     box-sizing: border-box;
     line-height: 1;
-    padding: 30px;
+    
 }
 
 ol, ul {
@@ -47,6 +47,10 @@ table {
 
 strong {
     font-family: 'Raleway', sans-serif;
+}
+.navigation,.search-container,.filters,.hebergement,.populaire,.activites{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /******** Navigation **********/
@@ -335,6 +339,7 @@ button>.text {
     margin-bottom: 2em;
     margin-top: 1.2em;
     margin-bottom: 35px;
+    color: gray;
 }
 
 /********* hébergement  **********/
@@ -368,10 +373,14 @@ button>.text {
     background-color: #F2F2F2;
     border-radius: 10px;
     padding: 32px 24px;
-    height: 800px;
+    height: 830px;
 }
 
-
+.marseille>h1{
+    margin-bottom: 10px;
+    
+    
+}
 .row {
     box-sizing: border-box;
     display: grid;
@@ -379,25 +388,26 @@ button>.text {
     grid-column-gap: 24px;
     background-color: #F2F2F2;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    
 }
 
 .populaire {
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 50px 230px 220px;
+    grid-template-rows: 60px 230px 220px;
     grid-row-gap: 24px;
     background-color: #F2F2F2;
     border-radius: 10px;
     padding: 10px 24px;
     -ms-grid-row-align: start;
-    height: 800px;
+    height: 830px;
 }
 
 .article {
     box-sizing: border-box;
     width: auto;
-    height: 300px;
+    height: 270px;
     padding: 5px;
     background-color: #fff;
     border-radius: 10px;
@@ -454,9 +464,12 @@ strong {
 .pluspop {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 60px;
 }
-
+.pluspop>h1{
+    margin-bottom: 10px;
+}
 .starpopu {
     all: unset;
     display: flex;
@@ -483,7 +496,7 @@ strong {
     height: 570px;
     width: auto;
     margin: 45px 3.8% 0 1%;
-    padding: 0;
+    
 }
 
 .activites h2 {
