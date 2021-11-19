@@ -649,6 +649,7 @@ footer section p {
 
 footer section p:hover {
     border-bottom: 1px solid blue;
+    color: black;
 }
 
 footer a:hover {
