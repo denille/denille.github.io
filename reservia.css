@@ -75,7 +75,9 @@ strong {
 .list-items {
     justify-self: end;
 }
-
+a{
+    text-decoration: none;
+}
 .item {
     padding-left: 30px;
     padding-right: 30px;
@@ -138,6 +140,9 @@ strong {
     line-height: 48px;
     font-size: 20px;
 }
+.icon:hover{
+    cursor: pointer;
+}
 
 .button-search {
     height: 48px;
@@ -153,6 +158,9 @@ strong {
     font-size: 14px;
     color: #fff;
     margin: 0;
+}
+.button-search:hover{
+    cursor: pointer;
 }
 
 .desktop {
@@ -231,6 +239,7 @@ h1 {
     border-radius: 30px;
     border: 2px solid #cecece;
     background-color: white;
+    
 }
 
 .button2 {
@@ -302,7 +311,14 @@ button>.text {
     background-color: #DEEBFF;
     transition: 0.2s;
 }
-
+.button1:hover, .button2:hover, .button3:hover, .button4:hover  {
+    cursor: pointer;
+    background-color: #0065fc;
+}
+button>.img:hover {
+    color: #DEEBFF;
+    background-color: #0065fc;
+}
 .button div:hover .descriptionfiltre {
     color: #0065FC;
     transition: 0.2s;
@@ -352,6 +368,9 @@ button>.text {
     grid-template-columns: 1fr 400px;
     grid-column-gap: 24px;
     padding-top: 20px;
+}
+.affiche{
+    font-size: 30px;
 }
 
 .heberge {
@@ -648,7 +667,7 @@ footer section p {
 }
 
 footer section p:hover {
-    border-bottom: 1px solid blue;
+    
     color: black;
 }
 
