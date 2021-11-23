@@ -457,16 +457,16 @@ strong {
     margin-left: 60px;
     text-align: right;
 }
-
+.lesplus{
+    font-size: 25px;
+}
 .popular {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 150px;
     height: 160px;
 }
-.lesplus{
-    font-size: 35px;
-}
+
 .articlepop {
     box-sizing: border-box;
     width: auto;
