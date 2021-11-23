@@ -464,7 +464,9 @@ strong {
     width: 150px;
     height: 160px;
 }
-
+.lesplus{
+    font-size: 25px;
+}
 .articlepop {
     box-sizing: border-box;
     width: auto;
